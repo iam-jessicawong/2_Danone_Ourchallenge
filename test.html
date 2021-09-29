@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title {
+            text-align: center;
+        }
+        
+        .container {
+            margin-top: 90px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            width: 500px;
+            border: 1px solid black;
+            border-radius: 2px;
+        }
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            top: 90%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: grey;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        
+        button {
+            background-color: transparent;
+        }
+        
+        .profile-name {
+            text-align: center;
+        }
+        
+        .slider {
+            width: 90px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .profile {
+            display: none;
+            flex-direction: column;
+        }
+        
+        .image-profile {
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">Our Team</h1>
+    <div class="container">
+        <div class="profile">
+            <div class="image-profile">
+                <img src="profile.png" alt="profile" style="border-radius: 50%;" width="50px">
+            </div>
+            <div class="profile-name">
+                <h3>John Doe</h3>
+                <h4>Front End</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sunt aliquid voluptatem molestias </p>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="image-profile">
+                <img src="profile.png" alt="profile" style="border-radius: 50%;" width="50px">
+            </div>
+            <div class="profile-name">
+                <h3>John aja</h3>
+                <h4>Back End</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sunt aliquid voluptatem molestias </p>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="image-profile">
+                <img src="profile.png" alt="profile" style="border-radius: 50%;" width="50px">
+            </div>
+            <div class="profile-name">
+                <h3>Doe aja</h3>
+                <h4>Fullstack</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sunt aliquid voluptatem molestias </p>
+            </div>
+        </div>
+        <div class="slider">
+            <a class="prev" onclick="prevSlide(1)">&#10094;</a>
+            <a class="next" onclick="nextSlide(-1)">&#10095;</a>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 1
+
+        slides(slideIndex)
+
+        function nextSlide(e) {
+            slides(slideIndex += e)
+        }
+
+        function prevSlide(e) {
+            slides(slideIndex -= e)
+        }
+
+        function slides(e) {
+            let slide = document.getElementsByClassName('profile')
+            if (e > slide.length) {
+                slideIndex = 0
+            }
+            if (e < 1) {
+                slideIndex = slide.length
+            }
+            for (i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none";
+            }
+            slide[slideIndex - 1].style.display = "flex";
+        }
+    </script>
+</body>
+
+</html>
