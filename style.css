@@ -1,0 +1,12 @@
+#gambar {
+    display:block; 
+    margin:auto;
+    align-content: center;
+    padding-top: 10%;
+}
+
+h3{
+    color:grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align: center;
+}
