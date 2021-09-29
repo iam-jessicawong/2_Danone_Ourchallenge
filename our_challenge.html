@@ -14,6 +14,10 @@
       color: rgb(53, 53, 53);
     }
 
+    header {
+      margin-bottom: 50px;
+    }
+
     header > h1 {
       text-align: center;
     }
@@ -52,47 +56,61 @@
       color: rgb(89, 147, 255) !important;
       border-bottom: 3.5px solid rgb(89, 147, 255);
     }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px;
+    }
+
+    p{
+      line-height: 22px;
+    }
+
   </style>
 </head>
 <body>
-  <header>
-    <h1>Our Challenge</h1>
-  </header>
-  <section>
-    <div id="image">
-      <img src="https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/partner/danone-1628146053162.png" alt="challenge_img">
-    </div>
-    <div id="challenge_detail">
-      <div id="tab">
-        <a href="" class="active" id="isu">Isu</a>
-        <a href="" id="permasalahan">Permasalahan</a>
-        <a href="" id="usahaHambatan">Usaha dan Hambatan</a>
-        <a href="" id="tujuan">Tujuan</a>
+  <div class="container">
+    <header>
+      <h1>Our Challenge</h1>
+    </header>
+    <section>
+      <div id="image">
+        <img src="https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/partner/danone-1628146053162.png" width="100%" alt="challenge_img">
       </div>
-      <div id="detail">
-        <div id="isu_detail">
-          <p>Karena kesehatan manusia dan kesehatan planet saling terkait, Danone percaya setiap pilihan makanan yang kita pilih akan membawa Dampak yang signifikan bagi planet ini. Danone mendorong orang-orang untuk memiliki diet gizi seimbang mereka pada saat yang sama juga menjaga karbon mereka Dampak dari makanan yang mereka pilih untuk planet ini. Untuk membuktikan dan mempromosikan pola pikir ini Danone membutuhkan alat yang dapat menghitung jumlah kalori serta karbon yang dihasilkan dari asupan makanan kita sehari-hari. Setiap makanan yang kita pilih akan membawa Dampak yang berbeda. Dengan berkembangnya alat untuk perhitungan karbon individu, akan memudahkan Danone Indonesia untuk mengkampanyekan kesadaran akan kebiasaan yang sejalan dengan misi One Planet One Health.</p>
+      <div id="challenge_detail">
+        <div id="tab">
+          <a href="" class="active" id="isu">Isu</a>
+          <a href="" id="permasalahan">Permasalahan</a>
+          <a href="" id="usahaHambatan">Usaha dan Hambatan</a>
+          <a href="" id="tujuan">Tujuan</a>
         </div>
-        <div id="permasalahan_detail" class="d-none">
-          <p>Dalam visi Danone One Planet One Health, Danone mendorong semua orang untuk memiliki pola makan gizi seimbang serta mampu mempertimbangkan dampak sumber makanan yang mereka pilih. Dari asalnya, jenis makanannya, cara pengolahannya dan aspek lainnya sehingga dapat meminimalkan dampak terhadap kesehatan dan kesehatan planet mereka. Diperlukan suatu alat atau platform yang memungkinkan setiap orang untuk mengukur jumlah kalori dan karbon dari pilihan makanan yang mereka pilih, sehingga pendekatan One Planet One Health Danone dapat dibuktikan melalui perhitungan menggunakan platform ini</p>
-        </div>
-        <div id="usahaHambatan_detail" class="d-none">
-          <p>Sebagai perusahaan yang mempromosikan perubahan kebiasaan makan untuk mencapai gaya hidup sehat Danone Di Indonesia memiliki program 'Isi Piringku' untuk anak-anak usia 4-6 yang disebarluaskan melalui ibu mereka. Kami telah Mengidentifikasi kalori di setiap makanan yang dapat disajikan dan menghitung dengan cara konvensional menggunakan buku panduan. Sedangkan untuk Dampak karbon sejauh ini Danone hanya memiliki alat untuk mengukur Dampak karbon untuk kegiatan operasional sehari-hari di sepanjang rantai pasokannya (lingkup 1, 2 dan 3) tetapi belum ada yang menghitung dampaknya terhadap pilihan makanan untuk Individu orang yang memungkinkan semua orang mengetahui karbon mereka Dampak dari setiap makanan yang mereka pilih. Di luar itu, kami percaya karbon tidak dapat dikurangi sampai nol, sehingga perlu skema offset untuk mengimbanginya. Dengan demikian, melalui aplikasi ini setiap orang dapat memiliki pilihan untuk memilih model kompensasi dengan cara yang sederhana dapat dipilih. Kami membutuhkan bantuan mereka untuk menghitung dan memilih cara mekanisme offset yang tepat dan mudah (tanam pohon, tanam mangrove, tanam karang dll).</p>
-        </div>
-        <div id="tujuan_detail" class="d-none">
-          <p>Danone Indonesia bertujuan untuk berkolaborasi dengan para peserta untuk mengembangkan alat atau platform yang dapat dengan mudah diakses oleh semua orang untuk :</p>
-          <ul>
-            <li>Memiliki rekomendasi diet berdasarkan kondisi (berat badan, tinggi badan, usia dll.)</li>
-            <li>Menghitung diet gizi seimbang mereka melalui perhitungan kalori, untuk memungkinkan mereka memilih makanan yang tepat untuk mendukung program diet untuk menjaga kesehatan mereka</li>
-            <li>Menghitung dampak karbon dari pilihan makanan yang mereka pilih</li>
-            <li>Sebagai ajakan untuk bertindak, kami bertujuan untuk membantu semua orang mengetahui rekomendasi offset untuk dipilih dengan cara sederhana</li> 
-            <li>Platform/alat dapat disediakan melalui aplikasi yang dapat diunduh dengan mudah melalui Play store atau Apple store</li>
-            <li>Target pengguna: Moms</li>
-          </ul>
+        <div id="detail">
+          <div id="isu_detail">
+            <p>Karena kesehatan manusia dan kesehatan planet saling terkait, Danone percaya setiap pilihan makanan yang kita pilih akan membawa Dampak yang signifikan bagi planet ini. Danone mendorong orang-orang untuk memiliki diet gizi seimbang mereka pada saat yang sama juga menjaga karbon mereka Dampak dari makanan yang mereka pilih untuk planet ini. Untuk membuktikan dan mempromosikan pola pikir ini Danone membutuhkan alat yang dapat menghitung jumlah kalori serta karbon yang dihasilkan dari asupan makanan kita sehari-hari. Setiap makanan yang kita pilih akan membawa Dampak yang berbeda. Dengan berkembangnya alat untuk perhitungan karbon individu, akan memudahkan Danone Indonesia untuk mengkampanyekan kesadaran akan kebiasaan yang sejalan dengan misi One Planet One Health.</p>
+          </div>
+          <div id="permasalahan_detail" class="d-none">
+            <p>Dalam visi Danone One Planet One Health, Danone mendorong semua orang untuk memiliki pola makan gizi seimbang serta mampu mempertimbangkan dampak sumber makanan yang mereka pilih. Dari asalnya, jenis makanannya, cara pengolahannya dan aspek lainnya sehingga dapat meminimalkan dampak terhadap kesehatan dan kesehatan planet mereka. Diperlukan suatu alat atau platform yang memungkinkan setiap orang untuk mengukur jumlah kalori dan karbon dari pilihan makanan yang mereka pilih, sehingga pendekatan One Planet One Health Danone dapat dibuktikan melalui perhitungan menggunakan platform ini</p>
+          </div>
+          <div id="usahaHambatan_detail" class="d-none">
+            <p>Sebagai perusahaan yang mempromosikan perubahan kebiasaan makan untuk mencapai gaya hidup sehat Danone Di Indonesia memiliki program 'Isi Piringku' untuk anak-anak usia 4-6 yang disebarluaskan melalui ibu mereka. Kami telah Mengidentifikasi kalori di setiap makanan yang dapat disajikan dan menghitung dengan cara konvensional menggunakan buku panduan. Sedangkan untuk Dampak karbon sejauh ini Danone hanya memiliki alat untuk mengukur Dampak karbon untuk kegiatan operasional sehari-hari di sepanjang rantai pasokannya (lingkup 1, 2 dan 3) tetapi belum ada yang menghitung dampaknya terhadap pilihan makanan untuk Individu orang yang memungkinkan semua orang mengetahui karbon mereka Dampak dari setiap makanan yang mereka pilih. Di luar itu, kami percaya karbon tidak dapat dikurangi sampai nol, sehingga perlu skema offset untuk mengimbanginya. Dengan demikian, melalui aplikasi ini setiap orang dapat memiliki pilihan untuk memilih model kompensasi dengan cara yang sederhana dapat dipilih. Kami membutuhkan bantuan mereka untuk menghitung dan memilih cara mekanisme offset yang tepat dan mudah (tanam pohon, tanam mangrove, tanam karang dll).</p>
+          </div>
+          <div id="tujuan_detail" class="d-none">
+            <p>Danone Indonesia bertujuan untuk berkolaborasi dengan para peserta untuk mengembangkan alat atau platform yang dapat dengan mudah diakses oleh semua orang untuk :</p>
+            <ul>
+              <li>Memiliki rekomendasi diet berdasarkan kondisi (berat badan, tinggi badan, usia dll.)</li>
+              <li>Menghitung diet gizi seimbang mereka melalui perhitungan kalori, untuk memungkinkan mereka memilih makanan yang tepat untuk mendukung program diet untuk menjaga kesehatan mereka</li>
+              <li>Menghitung dampak karbon dari pilihan makanan yang mereka pilih</li>
+              <li>Sebagai ajakan untuk bertindak, kami bertujuan untuk membantu semua orang mengetahui rekomendasi offset untuk dipilih dengan cara sederhana</li> 
+              <li>Platform/alat dapat disediakan melalui aplikasi yang dapat diunduh dengan mudah melalui Play store atau Apple store</li>
+              <li>Target pengguna: Moms</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <script>
     let isuTab = document.getElementById("isu")
