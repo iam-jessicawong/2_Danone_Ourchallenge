@@ -15,7 +15,7 @@
     }
 
     header {
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
 
     header > h1 {
@@ -31,11 +31,18 @@
     section {
       display: flex;
       padding: 0px 50px;
-      justify-content: space-between;
     }
     
     section > div {
       padding: 0px 20px;
+    }
+
+    div#image > img {
+      max-width: 100%;
+    }
+
+    div#image {
+      width: 100%;
     }
 
     div#challenge_detail {
@@ -61,23 +68,37 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 50px;
+      justify-content: center;
+      padding: 0 50px;
+      min-height: 100vh;
     }
 
     p{
       line-height: 22px;
     }
 
+    .container nav {
+      padding: 0 70px;
+      align-self: flex-start;
+    }
+
+    .container nav a {
+      text-decoration: none;
+    }
+
   </style>
 </head>
 <body>
   <div class="container">
+    <nav>
+      <a href="home.html">Back to home</a>
+    </nav>
     <header>
       <h1>Our Challenge</h1>
     </header>
     <section>
       <div id="image">
-        <img src="https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/partner/danone-1628146053162.png" width="100%" alt="challenge_img">
+        <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/82ED/production/_104771533_index_promo_976.jpg" alt="challenge_img">
       </div>
       <div id="challenge_detail">
         <div id="tab">
